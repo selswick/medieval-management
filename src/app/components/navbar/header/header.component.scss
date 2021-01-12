@@ -1,0 +1,14 @@
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 95px;
+    align-items: center;
+    text-align: center;
+    background-image: url(../../../../assets/header_bg.jpg);
+    background-position-x: 38px;
+    // transform: scaleX(-1);
+    color: white;
+    font-weight: 600;
+  }
