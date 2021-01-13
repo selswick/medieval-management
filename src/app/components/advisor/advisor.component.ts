@@ -47,12 +47,15 @@ export class AdvisorComponent implements OnInit {
     }
 
     //convert to minutes left
-    // this.nextTurnTime = moment.duration(moment(this.nextTurnTimeStamp,"HH:mm:ss").diff(moment(this.darkThroneTime, "HH:mm:ss"),'seconds'));
-    
-    this.nextTurnTime = moment(this.nextTurnTimeStamp,"DD/MM/YYYY HH:mm:ss")
-        .diff(moment(this.darkThroneTime,"DD/MM/YYYY HH:mm:ss"));
-    console.log(moment(this.nextTurnTime).seconds);
-    
+    let nextTurnMin = moment(moment(this.nextTurnTimeStamp,"DD/MM/YYYY HH:mm:ss")
+        .diff(moment(this.darkThroneTime,"DD/MM/YYYY HH:mm:ss"))).subtract('minute',1).format('mm');
+    let nextTurnSec = 59 - this.darkThroneTime.seconds();
+    if(nextTurnSec < 10) {
+      this.nextTurnTime = nextTurnMin + ":0" + nextTurnSec;
+    } else {
+      this.nextTurnTime = nextTurnMin + ":" + nextTurnSec;
+    }
+
     return this.nextTurnTime;
   }
 }
