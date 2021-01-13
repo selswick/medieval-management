@@ -15,23 +15,26 @@ p {
     text-align: center;
     color:black; 
     font-size: 10px;
+    padding-left: 5px;
+    padding-right: 10px;
 }
 
-.advisor__title {
+th {
     color:green;
     font-size: large;
     width: 100%;
 }
 
-.advisor__table {
-    margin-left: auto;
-    margin-right: auto;
-}
 
-.tr {
+tr {
     font-weight: bold;
 }
 
-.td {
+td {
 
+}
+
+.advisor__table {
+    margin-left: auto;
+    margin-right: auto;
 }

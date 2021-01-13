@@ -4,12 +4,12 @@
   <div class="advisor__content">
     <div>
       <table class="advisor__table">
-        <th class="advisor__title">-ADVISOR-</th>
+        <th>-ADVISOR-</th>
         <tr>It is better to buy a few stronger weapons than many weaker weapons.</tr>
       </table>
 
       <table class="advisor__table">
-        <th class="advisor__title">-STATS-</th>
+        <th>-STATS-</th>
         <tr>Gold: 2,339,941</tr>
         <tr>Citizen: 1,235</tr>
         <tr>Level: 2</tr>
@@ -18,11 +18,12 @@
       </table>
 
       <table class="advisor__table">
-        <th class="advisor__title">-TIME-</th>
+        <th>-TIME-</th>
         <tr>Time Until Next Turn</tr>
-        <tr>0:40</tr>
+        <tr>{{nextTurnTime | date: 'mm:SS:ss'}}</tr>
+        <tr>{{nextTurnTime}}</tr>
         <tr>Dark Throne Time</tr>
-        <tr>1:59</tr>
+        <tr>{{darkThroneTime  | date: 'H:mm '}}</tr>
       </table>
     </div>
     <div class="mdl-grid">
