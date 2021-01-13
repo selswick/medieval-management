@@ -1,22 +1,31 @@
   <!--   <img width="0px" alt="game UI idea" src="../assets/dark_cave.png" /> -->
 
-
-
-
-
-
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
-      <div style="padding:45px" class="mdl-layout__header-row">
 
-        <app-navbar></app-navbar>
+      <div style="padding:45px;" class="mdl-layout__header-row">
+        <app-header></app-header>
       </div>
 
-      <div class="mdl-layout__header-row mdl">
+      <div class="mdl-layout__header-row mdl mdl-layout__toolbar">
+        <div class="mdl-layout-spacer"></div>
         <app-toolbar></app-toolbar>
+        <div class="mdl-layout-spacer"></div>
       </div>
+
     </header>
-    <main class="mdl-layout__content" style="padding: 20px;">
-      <router-outlet></router-outlet>
-    </main>
+  </div>
+
+  <div class="mdl-grid">
+
+    <div class="mdl-cell mdl-cell--2-col advisor__col">
+      <app-advisor></app-advisor>
+    </div>
+
+    <div style="border: red; border-style: solid; background:black" class="mdl-cell mdl-cell--10-col">
+      <main class="mdl-layout__content">
+        <router-outlet></router-outlet>
+      </main>
+    </div>
+
   </div>

@@ -8,6 +8,7 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { HeaderComponent } from './components/navbar/header/header.component';
 import { ToolbarComponent } from './components/navbar/toolbar/toolbar.component';
 import { OverviewComponent } from './components/overview/overview.component';
+import { AdvisorComponent } from './components/advisor/advisor.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { OverviewComponent } from './components/overview/overview.component';
     DashboardComponent,
     HeaderComponent,
     ToolbarComponent,
-    OverviewComponent
+    OverviewComponent,
+    AdvisorComponent
   ],
   imports: [
     BrowserModule,
