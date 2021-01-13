@@ -1,0 +1,37 @@
+
+p {
+    color:black; 
+    font-size: 12px;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bolder;
+}
+
+.advisor__container {
+    background-color: green;
+}
+
+.advisor__content {
+    background-image: url('../../../assets/advisor/scroll_middle.png');
+    text-align: center;
+    color:black; 
+    font-size: 10px;
+}
+
+.advisor__title {
+    color:green;
+    font-size: large;
+    width: 100%;
+}
+
+.advisor__table {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tr {
+    font-weight: bold;
+}
+
+.td {
+
+}
