@@ -1,17 +1,45 @@
-<h2 class="bg-warning text-white">{{ title }}</h2>
+
+<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+  <div class="mdl-layout__header-row">
+    <h2 class="bg-warning text-white">{{ title }}</h2>
+  </div>
+</div>
+
+<div class="mdl-grid">
+<div class="mdl-cell mdl-cell--6-col advisor__col">
+  <h5 class="card-title text-center">Statistics</h5>
+  <canvas #healthBar></canvas>
+</div>
+
+<div class="mdl-cell mdl-cell--6-col">
+    <h5 class="card-title text-center">Economy</h5>
+    <canvas #lineCanvas></canvas>
+</div>
+<div class="mdl-cell mdl-cell--4-col">
+
+</div>
+<div class="mdl-cell mdl-cell--4-col">
+  <h5 class="card-title text-center">War Statistics</h5>
+  <canvas #winLossDoughnut></canvas>
+</div>
+<div class="mdl-cell mdl-cell--4-col"></div>
+
+</div>
+
+
 <div class="container">
   <div class="row">
     <div class="col-sm-4">
-      <canvas #barCanvas></canvas>
-      <h5 class="card-title text-center">Bar chart</h5>
+
     </div>
     <div class="col-sm-4">
-      <h5 class="card-title text-center">Win / Loss</h5>
-      <canvas #doughnutCanvas></canvas>
+
     </div>
     <div class="col-sm-4">
-      <canvas #lineCanvas></canvas>
-      <h5 class="card-title text-center">Line chart</h5>
+
     </div>
   </div>
 </div>
+
+
+
